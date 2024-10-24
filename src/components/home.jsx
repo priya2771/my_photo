@@ -1,5 +1,9 @@
 import React from "react";
-
+import sample1 from "../assets/sample1.jpg";
+import sample2 from "../assets/sample2.jpg";
+import sample3 from "../assets/sample3.jpg";
+import sample4 from "../assets/sample4.jpg";
+import sample5 from "../assets/sample5.jpg";
 export default function home() {
   return (
     <div id="home">
@@ -14,15 +18,15 @@ export default function home() {
       </div>
       <div className="row">
         <div className="column">
-          <img className="img-1" src="./assets/sample3.jpg" alt="1" />{" "}
+          <img className="img-1" src={sample3} alt="1" />
         </div>
         <div className="column">
-          <img className="img-2" src="./assets/sample1.jpg" alt="2" />
-          <img className="img-3" src="./assets/sample5.jpg" alt="3" />
+          <img className="img-2" src={sample1} alt="2" />
+          <img className="img-3" src={sample5} alt="3" />
         </div>
         <div className="column">
-          <img className="img-4" src="./assets/sample4.jpg" alt="4" />
-          <img className="img-5" src="./assets/sample2.jpg" alt="5" />
+          <img className="img-4" src={sample4} alt="4" />
+          <img className="img-5" src={sample2} alt="5" />
         </div>
       </div>
     </div>

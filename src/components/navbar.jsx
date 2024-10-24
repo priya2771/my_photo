@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FaBars } from "react-icons/fa6";
+import logo from "../assets/logo1.png";
 
 export default function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar(props) {
     <div className="container">
       <header>
         <a href="/" className="logo">
-          <img src="./assets/logo1.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <h4>{props.title}</h4>
         </a>
 
