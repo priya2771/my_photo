@@ -16,10 +16,10 @@ export default function Navbar(props) {
   return (
     <div className="container">
       <header>
-        <a href="/" className="logo">
+        <link smooth to="#home" className="logo">
           <img src={logo} alt="logo" />
           <h4>{props.title}</h4>
-        </a>
+        </link>
 
         <nav>
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
